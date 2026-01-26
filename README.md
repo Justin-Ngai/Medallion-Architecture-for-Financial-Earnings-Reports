@@ -41,7 +41,7 @@ Apache Iceberg tables are stored in S3 and support incremental upserts and analy
 
 The repository is organized into four main folders based on pipeline responsibilities.
 
-1. raw_processing
+**raw_processing**
 
 Contains AWS Lambda functions for data ingestion.
 
@@ -50,7 +50,7 @@ Contains AWS Lambda functions for data ingestion.
 
 These functions fetch external data and write raw JSON files to S3.
 
-2. environment_setup
+**environment_setup**
 
 Contains Athena queries for environment initialization.
 
@@ -59,7 +59,7 @@ Contains Athena queries for environment initialization.
 
 This layer prepares the analytical storage environment.
 
-3. staging_processing
+**staging_processing**
 
 Contains Athena queries for staging and merging data.
 
@@ -68,7 +68,7 @@ Contains Athena queries for staging and merging data.
 
 This layer handles transformation and merge logic.
 
-4. orchestration
+**orchestration**
 
 Contains Step Functions workflows.
 
